@@ -1,0 +1,42 @@
+```sql
+-- Experiment: DML Commands using INSERT and SELECT
+
+-- Step 1: Create Student Table
+
+CREATE TABLE Student (
+    Student_ID INT,
+    Student_Name VARCHAR(30),
+    Age INT,
+    Department VARCHAR(20)
+);
+
+-- Step 2: Insert Student Records
+
+INSERT INTO Student
+VALUES (101, 'Arun', 18, 'CSE');
+
+INSERT INTO Student
+VALUES (102, 'Priya', 19, 'Bioscience');
+
+INSERT INTO Student
+VALUES (103, 'Rahul', 18, 'CSE');
+
+-- Step 3: Display All Student Records
+
+SELECT * FROM Student;
+
+-- Step 4: Display Specific Columns
+
+SELECT Student_Name, Age
+FROM Student;
+
+-- Step 5: Display Students Belonging to CSE Department
+
+SELECT * FROM Student
+WHERE Department = 'CSE';
+
+-- Step 6: Display Student Using Student ID
+
+SELECT * FROM Student
+WHERE Student_ID = 103;
+```
